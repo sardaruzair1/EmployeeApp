@@ -1,0 +1,24 @@
+﻿@model EmployeeApp.Models.AddEmployeeViewModel
+@{
+}
+<h1 class="mt-2">Add Employee</h1>
+
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">Employee Name</label>
+        <input type="text" class="form-control" placeholder="John Doe" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee City</label>
+        <input type="text" class="form-control" id="" placeholder="ABC CITY" asp-for="City">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee State</label>
+        <input type="text" class="form-control" id="" placeholder="Sindh" asp-for="State">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee Salary</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="234..." asp-for="Salary">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
