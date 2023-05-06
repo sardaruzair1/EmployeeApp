@@ -1,0 +1,29 @@
+﻿@model EmployeeApp.Models.EmployeeUpdate
+@{
+}
+<h1 class="mt-2">Edit Employee</h1>
+
+<form method="post" action="View">
+    <div class="mb-3">
+        <label for="" class="form-label">Employee Id</label>
+        <input type="text" class="form-control" placeholder="John Doe" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee Name</label>
+        <input type="text" class="form-control" placeholder="John Doe" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee City</label>
+        <input type="text" class="form-control" id="" placeholder="ABC CITY" asp-for="City">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee State</label>
+        <input type="text" class="form-control" id="" placeholder="Sindh" asp-for="State">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Employee Salary</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="234..." asp-for="Salary">
+    </div>
+    <button type="submit" class="btn btn-primary">Update Employee</button>
+    <button type="submit" asp-action="Delete" asp-controller="Employees" class="btn btn-danger">Delete Employee</button>
+</form>
